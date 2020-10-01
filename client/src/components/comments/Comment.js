@@ -5,14 +5,11 @@ import CommentsForm from './CommentsForm'
 import { AuthConsumer } from "../../providers/AuthProvider"
 
 const Comment = (props) => {  
-    const [ editing, setEditing] = useState(false)
-
-
-    function changeEdit(){
-        return setEditing(!editing)
-    }
-
-
+  const [editing, setEditing] = useState(false)
+  
+  function changeEdit(){
+    return setEditing(!editing)
+  }
 
 return (
 <div>

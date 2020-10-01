@@ -84,19 +84,3 @@ const ConnectedBoard = (props) => (
   </AuthConsumer>
 )
 export default ConnectedBoard;
-
-{/* edit with modals!!!
-  <br/>
-      {props.auth.user.id === props.user_id ? 
-      <div>
-      <Modal trigger = {<button onClick={() => setEditing(!editing)}>Edit</button>}>
-      <BoardForm toggleEdit={setEditing} editBoard={props.editBoard} {...props}/>
-    </Modal>
-      <Button icon="trash alternate outline" onClick={() => props.removeBoard(props.id)} />
-      </div> : null}
-      <div className="buttons">
-      {following  && props.auth.user.id !== props.user_id ? <button onClick={() => handleUnfollow(props.id)}>Unfollow</button> : null}
-
-      </div>
-      </div> */}
-

@@ -16,7 +16,7 @@ const CommentsForm = (props) => {
 
     
 const handleSubmit = (e) => {
-  // e.preventDefault()
+  e.preventDefault()
   if (props.editComment) {
       props.editComment(props.commentId, comment)
       props.changeEdit()
