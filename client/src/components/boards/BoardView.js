@@ -54,7 +54,7 @@ const BoardView = (props) => {
         <button onClick={props.history.goBack}>Go Back</button>
         {showForm && <BoardForm editSingleBoard={editSingleBoard} toggleEdit={setEdit} {...board} />}
         <div>
-          {showForm ? 
+          {showForm ?  
               <button onClick={() => setShowForm(!showForm)}>Close Form</button> : 
               <img src={editIcon} className="small-icon" onClick={() => setShowForm(!showForm)}/>
           }

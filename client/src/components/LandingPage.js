@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import styled from 'styled-components'
-import image from '../images/family.jpg'
+import image from '../images/beachFamily.jpg'
 import logo from '../images/LogoFiles/ForWeb/medium.png'
 import { Image, Button, Modal } from 'semantic-ui-react';
 import Register from './user/Register';
