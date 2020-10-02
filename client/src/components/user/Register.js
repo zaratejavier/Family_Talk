@@ -2,7 +2,7 @@ import React from 'react';
 import { AuthConsumer,  } from "../../providers/AuthProvider";
 import { Button, Form, Segment, Header, Modal} from 'semantic-ui-react';
 import { withRouter } from 'react-router-dom';
-import "../../styles/Modals.css";
+import "../user/Register.css"
 
 class Register extends React.Component {
   state = { name: "", email: '', password: '', passwordConfirmation: '', first_name: '', last_name: '' };
@@ -27,19 +27,12 @@ class Register extends React.Component {
     const { name, email, password, passwordConfirmation, first_name, last_name } = this.state;
     
     return (
-      <Modal.Content 
-        // id="myModal" 
-        // className="modal"
-        >
+      <Modal.Content className="register__modal">
         <Header as='h1' 
           textAlign='center'
-          // className="modal-header"
-          >Register
-          </Header>
-        <Form onSubmit={this.handleSubmit} 
-          // className="modal-content"
-          >
-          <span class="close" onClick={() => this.props.toggleRegister()}>&times;</span>
+          >Join Family Talk
+        </Header>
+        <Form onSubmit={this.handleSubmit}>
           <Form.Input
             label="Username"
             autoFocus
@@ -93,6 +86,7 @@ class Register extends React.Component {
           />
           <Segment textAlign='center' basic>
             <Button primary type='submit' >Submit</Button>
+            <Button class="close" onClick={() => this.props.toggleRegister()}>Close</Button>
           </Segment>
         </Form>
       </Modal.Content>

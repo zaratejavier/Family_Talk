@@ -11,7 +11,7 @@ class Navbar extends React.Component {
 
    trigger = (
   <span>
-    <Image src={MSLogo} className='logo'/>
+    <Image src={MSLogo} className='navbar__logo'/>
   </span>
 )
 

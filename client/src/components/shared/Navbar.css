@@ -7,9 +7,10 @@
   width: 96%;
 }
 
-.logo {
+.navbar__logo {
   height: 7.5em;
   width: 7.5em;
+  margin-left: 2rem;
 }
 
 .proImage {

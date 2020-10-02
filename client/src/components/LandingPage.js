@@ -39,8 +39,8 @@ const LandingPage = (props) => {
       </div> }
         
       <div className="landingPage__body">
-        <div>
-          <Image src={logo} className="image-logo" />
+        <div className="landingPage__logo">
+          <Image src={logo}/>
         </div>
         <div className="landingPage__sentence">
           <p>keep in touch...</p>
