@@ -5,32 +5,29 @@
   justify-content: flex-end;
   padding-top: -25px;
   position: absolute;
-  top: 25px;
-  right: 1px;
+  top: 30px;
+  right: -30px;
 }
 
-.body-landing {
+.landingPage__body {
   font-family: FugazOne, sans-serif;
   background-color: white;
-  color: grey;
+  color: rgb(113, 113, 113);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
-.intro 
-
-h3 {  
+.landingPage__sentence > p {  
   justify-content: center;
   align-items: center;
   text-align: center;
- 
+  font-size: x-large;
+  margin-bottom: 0%;
 }
 
-.button {
+.landingPage__buttons {
   display: flex;
   flex-flow: row nowrap;
   width: 14em;
@@ -38,13 +35,21 @@ h3 {
 }
 
 .image-logo {
-  height: 25em;
-  width: 25em;
-  padding-bottom: 0;
+  height: 30em;
+  width: 30em;
+  margin-top: -50px;
 }
 
 .landingPage__image {
-  height: auto;
-  width: 50em;
-  padding-top: 2em;
+  height: 40em;
+  width: 70em;
+  padding-top: 5em;
+
+}
+
+.landingPage__sentence{
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  margin-top: -35px;
 }

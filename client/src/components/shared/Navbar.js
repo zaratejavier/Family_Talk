@@ -22,7 +22,6 @@ trigger2 = () => {
   <Image src={user.image || defaultImage}  className='proImage'/>
     </span>
  )
- 
 }
 
   rightNavItems = () => {
@@ -38,34 +37,22 @@ trigger2 = () => {
             </Dropdown>    
       )
     } 
-
-    // else {
-    //   return (
-    //     <Dropdown text = 'Login' icon = 'login'>
-    //       <Dropdown.Menu>
-    //       <Dropdown.Item as = {Link} to ='/login'>Login</Dropdown.Item>
-    //       <Dropdown.Item as = {Link} to = '/register'>Register</Dropdown.Item>
-    //       </Dropdown.Menu>
-    //       </Dropdown>
-    //  )
-    // }
    }
 
   render() {
     return( 
-      <div className="navbar">
-  <Dropdown  trigger={this.trigger} icon={null}>
-    <Dropdown.Menu>
-      <Dropdown.Item as={Link} to='/'>Home </Dropdown.Item>
-      <Dropdown.Item as ={Link} to='/landingPage'>Family Room</Dropdown.Item>
-      <Dropdown.Item as={Link} to='/publicPage'>Explore</Dropdown.Item>
-      <Dropdown.Item as={Link} to='/contactUs'>Contact</Dropdown.Item>
-    </Dropdown.Menu>
-        </Dropdown>
-        <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center',}}>
-  {this.rightNavItems()}
-</div>
-  
+    <div className="navbar">
+      <Dropdown  trigger={this.trigger} icon={null}>
+        <Dropdown.Menu>
+          <Dropdown.Item as={Link} to='/'>Home </Dropdown.Item>
+          <Dropdown.Item as ={Link} to='/landingPage'>Family Room</Dropdown.Item>
+          <Dropdown.Item as={Link} to='/publicPage'>Explore</Dropdown.Item>
+          <Dropdown.Item as={Link} to='/contactUs'>Contact</Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown>
+      <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center',}}>
+        {this.rightNavItems()}
+      </div>
   </div>
   )} 
 }

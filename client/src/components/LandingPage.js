@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import styled from 'styled-components'
 import image from '../images/beachFamily.jpg'
 import logo from '../images/LogoFiles/ForWeb/medium.png'
 import { Image, Button, Modal } from 'semantic-ui-react';
@@ -24,7 +23,7 @@ const LandingPage = (props) => {
     <div className="landingPage">
     {props.auth.user? null :
       <div className="landingPage__header">
-        <div className="button">
+        <div className="landingPage__buttons">
           <Modal open={showLogin} trigger={<Button id="modal-btn" onClick={() => toggleLogin()}>Sign In</Button>}>
             <Modal.Content>
               <Login toggleLogin={toggleLogin}/>
@@ -39,11 +38,13 @@ const LandingPage = (props) => {
         </div>
       </div> }
         
-      <div className="body-landing">
-        <div><Image src={logo} className="image-logo"/></div>
-        <div className="intro">
-          <h3>keep in touch...</h3>
-          <h3>no matter where you are</h3>
+      <div className="landingPage__body">
+        <div>
+          <Image src={logo} className="image-logo" />
+        </div>
+        <div className="landingPage__sentence">
+          <p>keep in touch...</p>
+          <p>no matter where you are</p>
         </div>
         <div><Image src={image} className="landingPage__image"/></div>
       </div>
