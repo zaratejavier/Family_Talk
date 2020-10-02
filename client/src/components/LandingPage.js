@@ -21,9 +21,9 @@ const LandingPage = (props) => {
   }
 
   return (
-    <>
+    <div className="landingPage">
     {props.auth.user? null :
-      <div className="header-landing">
+      <div className="landingPage__header">
         <div className="button">
           <Modal open={showLogin} trigger={<Button id="modal-btn" onClick={() => toggleLogin()}>Sign In</Button>}>
             <Modal.Content>
@@ -45,9 +45,9 @@ const LandingPage = (props) => {
           <h3>keep in touch...</h3>
           <h3>no matter where you are</h3>
         </div>
-        <div><Image src={image} className="image-featured"/></div>
+        <div><Image src={image} className="landingPage__image"/></div>
       </div>
-    </>
+    </div>
   )
 }
 

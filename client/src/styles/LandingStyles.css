@@ -1,8 +1,12 @@
-.header-landing {
+.landingPage__header {
   font-family: "FugazOne", sans-serif;
   background-color: white;
   display: flex;
   justify-content: flex-end;
+  padding-top: -25px;
+  position: absolute;
+  top: 25px;
+  right: 1px;
 }
 
 .body-landing {
@@ -23,8 +27,7 @@ h3 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 0;
-  margin-bottom: 0;
+ 
 }
 
 .button {
@@ -40,7 +43,7 @@ h3 {
   padding-bottom: 0;
 }
 
-.image-featured {
+.landingPage__image {
   height: auto;
   width: 50em;
   padding-top: 2em;
