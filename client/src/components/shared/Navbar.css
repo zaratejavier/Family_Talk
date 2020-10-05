@@ -18,3 +18,14 @@
     width: 4em;
     border-radius: 50%;
 }
+
+.navbar__dropdown{
+  display: flex;  
+}
+
+.navbar__icon{
+  position: absolute;
+  top: 20px;
+  right: -22px;
+  font-size: large;
+}

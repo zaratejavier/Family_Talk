@@ -4,6 +4,7 @@ import { Menu, Dropdown, Image} from 'semantic-ui-react'
 import { Link, withRouter, } from 'react-router-dom'
 import MSLogo from '../../assets/mediumsmall.jpg'
 import './Navbar.css'
+import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 
 const defaultImage = 'https://d30y9cdsu7xlg0.cloudfront.net/png/15724-200.png';
 
@@ -18,8 +19,9 @@ class Navbar extends React.Component {
 trigger2 = () => {
  const { auth: { user, handleLogout, }, location, } = this.props;
  return (
-  <span>
-  <Image src={user.image || defaultImage}  className='proImage'/>
+  <span className="navbar__dropdown">
+     <Image className='navbar__image' src={user.image || defaultImage} className='proImage' />
+     <ArrowDropDownIcon className="navbar__icon" fontSize="large"/>
     </span>
  )
 }
