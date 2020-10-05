@@ -23,8 +23,8 @@ const App = () => (
       <Switch>
         <Route exact path="/" component={LandingPage} />
         <ProtectedRoute exact path="/settings" component={Settings} />
-        <Route exact path="/login" component={Login} />
-        <Route exact path="/register" component={Register} />
+        {/* <Route exact path="/login" component={Login} />
+        <Route exact path="/register" component={Register} /> */}
         <ProtectedRoute exact path='/landingPage' component={Home} />
         <Route exact path="/board/:id" component={BoardView} />
         <Route exact path="/board/:board_id/post/:id" component={PostView} />

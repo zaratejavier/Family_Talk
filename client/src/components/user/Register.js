@@ -1,7 +1,7 @@
 import React from 'react';
 import { AuthConsumer,  } from "../../providers/AuthProvider";
 import { Button, Form, Segment, Header, Modal} from 'semantic-ui-react';
-import { withRouter } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import "../user/Register.css"
 
 class Register extends React.Component {
@@ -30,6 +30,7 @@ class Register extends React.Component {
       <Modal.Content className="register__modal">
         <Header as='h1' 
           textAlign='center'
+          className="register__modalTitle"
           >Join Family Talk
         </Header>
         <Form onSubmit={this.handleSubmit}>
