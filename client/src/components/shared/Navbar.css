@@ -14,18 +14,29 @@
 }
 
 .proImage {
-    height: 4em;
-    width: 4em;
+    height: 3em;
+    width: 3em;
     border-radius: 50%;
 }
 
 .navbar__dropdown{
-  display: flex;  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px; 
+  font-size: large; 
 }
 
 .navbar__icon{
   position: absolute;
-  top: 20px;
+  top: 25px;
   right: -22px;
   font-size: large;
+}
+
+.navbar__name{
+  padding: 8px;
+  color: rgb(130, 145, 150);
+  font-size: large;
+
 }

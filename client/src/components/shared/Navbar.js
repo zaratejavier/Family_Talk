@@ -19,10 +19,12 @@ class Navbar extends React.Component {
 trigger2 = () => {
  const { auth: { user, handleLogout, }, location, } = this.props;
  return (
-  <span className="navbar__dropdown">
+  <div className="navbar__dropdown">
      <Image className='navbar__image' src={user.image || defaultImage} className='proImage' />
-     <ArrowDropDownIcon className="navbar__icon" fontSize="large"/>
-    </span>
+     <ArrowDropDownIcon className="navbar__icon" fontSize="large" />
+    <span className="navbar__name">{user.name}</span>
+
+  </div>
  )
 }
 

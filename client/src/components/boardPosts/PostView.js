@@ -85,18 +85,18 @@ const unlikePost = (postId) => {
   return(
     <div className = "container">
       <div className="post-image-container">
-          <Image className = "post-image" src={card.image || familyTalkIcon}/>
+        <Image className="post-image" src={card.image || familyTalkIcon} />
       </div>
           <div className="post-info">
             {props.auth.user.id === card.user_id ? 
             <div className="postView__icons">
-              <div className="small-icon" onClick={() => setEditing(!editing)}><EditIcon/></div>
-              <div className="small-icon" onClick={() => deletePost(card.id)}><DeleteIcon/></div>
+              <div className="small-icon" onClick={() => setEditing(!editing)}><EditIcon fontSize="large"/></div>
+              <div className="small-icon" onClick={() => deletePost(card.id)}><DeleteIcon fontSize="large"/></div>
             </div> : null}
 
               {editing ? <PostForm toggleEdit={setEditing} post={card} editSinglePost={editSinglePost} editing={editing}  userId={props.userId}/> : null } 
               
-          <h1 className="post-title"> {card.title}</h1>
+          <p className="post-title"> {card.title}</p>
           <p className="post-description">{card.description}</p>
           <div className = "like-container">
             <div className="comment-container">

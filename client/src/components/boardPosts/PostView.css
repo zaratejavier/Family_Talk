@@ -10,7 +10,7 @@
   padding-bottom: 5em; 
   background-color: whitesmoke;
   border: 2px #b5b8ba solid;
-  border-width: 3px;
+  border-width: 2px;
   margin-right: 2em;
 }
 
@@ -36,8 +36,8 @@
 }
 
 .small-icon {
-  height:2em;
-  width:2em;
+  /* height:em;
+  width:3em; */
   margin:.5em;
   color: rgb(109, 109, 109);
   cursor: pointer;
@@ -82,5 +82,4 @@ margin-right: 2em;
 
 .postView__icons{
   display: flex;
-  align-content: space-around;
 }
