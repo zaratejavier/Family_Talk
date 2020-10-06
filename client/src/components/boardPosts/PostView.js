@@ -8,8 +8,12 @@ import { withRouter } from "react-router-dom"
 import "./PostView.css"
 import editIcon from '../../images/edit.png'
 import trashIcon from '../../images/trash.png'
-import likeIcon from '../../images/like.png'
+// import likeIcon from '../../images/like.png'
 import familyTalkIcon from '../boards/mediumsmall.png'
+// import ThumbUpIcon from '@material-ui/icons/ThumbUp';
+// import ThumbDownAltIcon from '@material-ui/icons/ThumbDownAlt';
+import FavoriteIcon from '@material-ui/icons/Favorite';
+import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 
 
 
@@ -98,10 +102,12 @@ const unlikePost = (postId) => {
       <p className="post-description">{card.description}</p>
       <div className = "like-container">
         <div className="comment-container">
-        <h4>Likes: {postLikes ? postLikes.length : "0"}</h4>
+            <h4> {postLikes ? postLikes.length : "0"} {postLikes.length === 0 || postLikes.length > 1 ? "likes" : "like" }</h4>
         {like ? <button className = "like-button" onClick={() => 
-          unlikePost(card.id)}>Unlike</button> : 
-          <button className="like-button" onClick={() => likePost(card.id)}><img className="small-icon" src={likeIcon}/>Like</button>}
+          unlikePost(card.id)}><FavoriteIcon style={{ color: "red" }}/></button> : 
+              <button className="like-button" onClick={() => likePost(card.id)}>
+                <FavoriteBorderIcon />
+              </button>}
         
       </div>
       <div className="comment-container">

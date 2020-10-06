@@ -43,7 +43,7 @@ trigger2 = () => {
 
   render() {
     return( 
-    <div className="navbar">
+      <div className="navbar">
       <Dropdown  trigger={this.trigger} icon={null}>
         <Dropdown.Menu>
           <Dropdown.Item as={Link} to='/'>Home </Dropdown.Item>
@@ -54,7 +54,7 @@ trigger2 = () => {
       </Dropdown>
       <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center',}}>
         {this.rightNavItems()}
-      </div>
+        </div>
   </div>
   )} 
 }
