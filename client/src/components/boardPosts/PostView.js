@@ -6,14 +6,11 @@ import axios from "axios"
 import { AuthConsumer } from "../../providers/AuthProvider"
 import { withRouter } from "react-router-dom"
 import "./PostView.css"
-import editIcon from '../../images/edit.png'
-import trashIcon from '../../images/trash.png'
-// import likeIcon from '../../images/like.png'
 import familyTalkIcon from '../boards/mediumsmall.png'
-// import ThumbUpIcon from '@material-ui/icons/ThumbUp';
-// import ThumbDownAltIcon from '@material-ui/icons/ThumbDownAlt';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
+import EditIcon from '@material-ui/icons/Edit';
+import DeleteIcon from '@material-ui/icons/Delete';
 
 
 
@@ -92,9 +89,10 @@ const unlikePost = (postId) => {
       </div>
           <div className="post-info">
             {props.auth.user.id === card.user_id ? 
-            <div>
-              <img className="small-icon" src={editIcon} onClick={() => setEditing(!editing)}/>
-              <img className="small-icon" src={trashIcon} onClick={() => deletePost(card.id)}/> </div>: null }
+            <div className="postView__icons">
+              <div className="small-icon" onClick={() => setEditing(!editing)}><EditIcon/></div>
+              <div className="small-icon" onClick={() => deletePost(card.id)}><DeleteIcon/></div>
+            </div> : null}
 
               {editing ? <PostForm toggleEdit={setEditing} post={card} editSinglePost={editSinglePost} editing={editing}  userId={props.userId}/> : null } 
               
