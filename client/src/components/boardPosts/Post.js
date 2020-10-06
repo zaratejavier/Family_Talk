@@ -4,6 +4,7 @@ import axios from "axios"
 import { AuthConsumer } from "../../providers/AuthProvider"
 import "./Posts.css"
 import familyTalkIcon from '../boards/mediumsmall.png'
+import ThumbUpIcon from '@material-ui/icons/ThumbUp';
 
 
 const Post = (props) => {

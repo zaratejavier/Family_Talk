@@ -88,37 +88,36 @@ const unlikePost = (postId) => {
   return(
     <div className = "container">
       <div className="post-image-container">
-        <Image className = "post-image" src={card.image || familyTalkIcon}/>
+          <Image className = "post-image" src={card.image || familyTalkIcon}/>
       </div>
-      <div className="post-info">
-         {props.auth.user.id === card.user_id ? 
-        <div>
-          <img className="small-icon" src={editIcon} onClick={() => setEditing(!editing)}/>
-          <img className="small-icon" src={trashIcon} onClick={() => deletePost(card.id)}/> </div>: null }
+          <div className="post-info">
+            {props.auth.user.id === card.user_id ? 
+            <div>
+              <img className="small-icon" src={editIcon} onClick={() => setEditing(!editing)}/>
+              <img className="small-icon" src={trashIcon} onClick={() => deletePost(card.id)}/> </div>: null }
 
-          {editing ? <PostForm toggleEdit={setEditing} post={card} editSinglePost={editSinglePost} editing={editing}  userId={props.userId}/> : null } 
-          
-      <h1 className="post-title"> {card.title}</h1>
-      <p className="post-description">{card.description}</p>
-      <div className = "like-container">
-        <div className="comment-container">
-            <h4> {postLikes ? postLikes.length : "0"} {postLikes.length === 0 || postLikes.length > 1 ? "likes" : "like" }</h4>
-        {like ? <button className = "like-button" onClick={() => 
-          unlikePost(card.id)}><FavoriteIcon style={{ color: "red" }}/></button> : 
-              <button className="like-button" onClick={() => likePost(card.id)}>
-                <FavoriteBorderIcon />
-              </button>}
+              {editing ? <PostForm toggleEdit={setEditing} post={card} editSinglePost={editSinglePost} editing={editing}  userId={props.userId}/> : null } 
+              
+          <h1 className="post-title"> {card.title}</h1>
+          <p className="post-description">{card.description}</p>
+          <div className = "like-container">
+            <div className="comment-container">
+                <h4> {postLikes ? postLikes.length : "0"} {postLikes.length === 0 || postLikes.length > 1 ? "likes" : "like" }</h4>
+            {like ? <button className = "like-button" onClick={() => 
+              unlikePost(card.id)}><FavoriteIcon style={{ color: "red" }}/></button> : 
+                  <button className="like-button" onClick={() => likePost(card.id)}>
+                    <FavoriteBorderIcon />
+                  </button>}
+          </div>
+          <div className="comment-container">
+            <h3>Comments</h3>
+            <Comments postId = {props.match.params.id} />
+          </div>
+          </div>
+          <br/>
+          <Button onClick={props.history.goBack}>Go Back</Button>
         
       </div>
-      <div className="comment-container">
-        <h3>Comments</h3>
-        <Comments postId = {props.match.params.id} />
-      </div>
-      </div>
-      <br/>
-      <Button onClick={props.history.goBack}>Go Back</Button>
-      
-    </div>
     </div>
   )
 }
