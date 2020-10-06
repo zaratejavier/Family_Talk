@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap'); 
+
 .container {
   display: flex;
   flex-flow: row nowrap;
@@ -43,16 +46,19 @@
   cursor: pointer;
 }
 
-.post-title {
-  font-size: 5em;
-  font: Verdana;
-  font-weight: lighter;
+.postView__title {
+  font-size: 3em;
+  color: rgb(109, 109, 109);
+  /* font-family: 'Sansita Swashed', cursive; */
+
 }
 
-.post-description {
-  font-size: 2.4em;
-  font: Verdana;
-  font-weight: lighter;
+.postView__description {
+  font-size: 2em;
+/* font-family: sans-serif;
+  font-weight: lighter; */
+  /* font-family: 'Sansita Swashed', cursive; */
+  font-family: 'Dancing Script', cursive;
 }
 
 

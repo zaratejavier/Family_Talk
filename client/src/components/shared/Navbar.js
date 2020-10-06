@@ -21,7 +21,7 @@ trigger2 = () => {
  return (
   <div className="navbar__dropdown">
      <Image className='navbar__image' src={user.image || defaultImage} className='proImage' />
-     <ArrowDropDownIcon className="navbar__icon" fontSize="large" />
+     <ArrowDropDownIcon className="navbar__icon" fontSize="large" style={{color: "rgb(130, 145, 150)"}}/>
     <span className="navbar__name">{user.name}</span>
 
   </div>

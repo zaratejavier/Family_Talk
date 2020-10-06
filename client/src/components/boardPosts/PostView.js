@@ -96,8 +96,8 @@ const unlikePost = (postId) => {
 
               {editing ? <PostForm toggleEdit={setEditing} post={card} editSinglePost={editSinglePost} editing={editing}  userId={props.userId}/> : null } 
               
-          <p className="post-title"> {card.title}</p>
-          <p className="post-description">{card.description}</p>
+          <p className="postView__title"> {card.title}</p>
+          <p className="postView__description">{card.description}</p>
           <div className = "like-container">
             <div className="comment-container">
                 <h4> {postLikes ? postLikes.length : "0"} {postLikes.length === 0 || postLikes.length > 1 ? "likes" : "like" }</h4>
