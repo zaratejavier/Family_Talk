@@ -50,17 +50,21 @@
 }
 
 
-.like-container {
+/* .like-container {
   display: flex;
   flex-flow:row nowrap;
   
-}
+} */
 
 .like-button {
   display:flex;
   flex-flow: row nowrap;
   align-items: center;
-  font-family: cursive;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
 }
 
 .comment-container {
