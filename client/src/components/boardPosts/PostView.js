@@ -83,7 +83,7 @@ const unlikePost = (postId) => {
   }
 
   return(
-    <div className = "container">
+    <div className = "postView__container">
       <div className="post-image-container">
         <Image className="post-image" src={card.image || familyTalkIcon} />
       </div>
@@ -98,19 +98,17 @@ const unlikePost = (postId) => {
               
           <p className="postView__title"> <strong>{card.title}</strong></p>
           <p className="postView__description">{card.description}</p>
-          <div className = "like-container">
-            <div className="comment-container">
-                <h4> {postLikes ? postLikes.length : "0"} {postLikes.length === 0 || postLikes.length > 1 ? "likes" : "like" }</h4>
+          <div className="postView__likeContainer">
+            <h4> {postLikes ? postLikes.length : "0"} {postLikes.length === 0 || postLikes.length > 1 ? "likes" : "like" }</h4>
             {like ? <button className = "like-button" onClick={() => 
               unlikePost(card.id)}><FavoriteIcon style={{ color: "red" }}/></button> : 
-                  <button className="like-button" onClick={() => likePost(card.id)}>
-                    <FavoriteBorderIcon />
-                  </button>}
+                <button className="like-button" onClick={() => likePost(card.id)}>
+                  <FavoriteBorderIcon />
+                </button>}
+          <div >
           </div>
-          <div className="comment-container">
             {/* <h3>Comments</h3> */}
             <Comments postId = {props.match.params.id} />
-          </div>
           </div>
           <br/>
           <Button onClick={props.history.goBack}>Go Back</Button>

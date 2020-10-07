@@ -38,7 +38,7 @@ const handleSubmit = (e) => {
       <Form onSubmit={handleSubmit}>
       <Form.Input
           label="Comment"
-          placeholder="Enter Comment Here"
+          placeholder="Add a comment here..,"
           value={des}
           onChange={(e) => setDes(e.target.value)}
           required

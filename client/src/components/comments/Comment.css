@@ -13,6 +13,8 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  padding-left: 20px;
+  padding-bottom: 20px;
 }
 
 .comment__text{

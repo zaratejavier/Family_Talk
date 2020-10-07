@@ -3,7 +3,7 @@
  @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
 
-.container {
+.postView__container {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -80,13 +80,13 @@
   background: none;
   cursor: pointer;
   outline: none;
-
 }
 
-.comment-container {
+.postView__likeContainer {
 display:flex;
 flex-flow:column nowrap;
 margin-right: 2em;
+padding-bottom: 20px;
 }
 
 .postView__icons{
