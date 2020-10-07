@@ -106,9 +106,9 @@ const unlikePost = (postId) => {
                   <FavoriteBorderIcon />
                 </button>}
           <div >
-          </div>
             {/* <h3>Comments</h3> */}
             <Comments postId = {props.match.params.id} />
+          </div>
           </div>
           <br/>
           <Button onClick={props.history.goBack}>Go Back</Button>

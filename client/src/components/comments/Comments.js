@@ -50,8 +50,9 @@ function Comments(props){
   
     return(
         <div>
+        <CommentsForm addComment={addComment} postId={props.postId} userId={props.userId} />
+        <br/>
             {renderComments()}
-            <CommentsForm addComment = {addComment} postId = {props.postId} userId = {props.userId}/>
         </div>
 
 
