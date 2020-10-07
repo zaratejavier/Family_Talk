@@ -1,0 +1,19 @@
+.comment__button{
+  display:flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.comment__icons{
+  display: flex;
+  flex-direction: row;
+}
+
+.comment__text{
+  font-size: large;
+}

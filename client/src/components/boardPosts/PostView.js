@@ -96,7 +96,7 @@ const unlikePost = (postId) => {
 
               {editing ? <PostForm toggleEdit={setEditing} post={card} editSinglePost={editSinglePost} editing={editing}  userId={props.userId}/> : null } 
               
-          <p className="postView__title"> {card.title}</p>
+          <p className="postView__title"> <strong>{card.title}</strong></p>
           <p className="postView__description">{card.description}</p>
           <div className = "like-container">
             <div className="comment-container">
@@ -108,7 +108,7 @@ const unlikePost = (postId) => {
                   </button>}
           </div>
           <div className="comment-container">
-            <h3>Comments</h3>
+            {/* <h3>Comments</h3> */}
             <Comments postId = {props.match.params.id} />
           </div>
           </div>
