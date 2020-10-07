@@ -15,7 +15,7 @@ const Comment = (props) => {
   }
 
 return (
-<div>
+<div className="comment__container">
     <p className="comment__text">{props.comment.owner} {props.comment.description}</p>
     {props.auth.user.id === props.comment.user_id ? 
     <div className="comment__icons">

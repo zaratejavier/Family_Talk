@@ -12,8 +12,14 @@
 .comment__icons{
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
 }
 
 .comment__text{
   font-size: large;
+}
+
+.comment__container{
+  display: flex;
+  justify-content: space-between;
 }
