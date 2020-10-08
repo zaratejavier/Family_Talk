@@ -11,30 +11,30 @@ const Home = (props) => {
  const [view, setView] = useState('Board')
      
   return (
-     <div className="home">
-    <h1 className="home__header">{props.auth.user.name} {props.auth.user.last_name}</h1>
-    <div className="home__modal">
-    <Dropdown icon="plus" >
-        <Dropdown.Menu>
-        {/* <Modal size="mini" centered={true} trigger={<Button  color="grey">Add Board or Post</Button>}> */}
-          <Modal.Content>
-          <AddBoard />
-        <br />
-        <br />
-           <AddPost />
-            </Modal.Content>
-          {/* </Modal> */}
+    <>
+    <div className="home">
+      <hr/>
+        <div className="home__header">{props.auth.user.name} {props.auth.user.last_name}
+        <div className="home__modal">
+          <Dropdown icon="plus" className="home__DropDown">
+            <Dropdown.Menu>
+              <Modal.Content>
+                <AddBoard />
+                <AddPost />
+              </Modal.Content>
             </Dropdown.Menu>
-            </Dropdown> 
+          </Dropdown> 
+        </div>
+      </div>
+      <div className="home__buttons">
+        <Button color= "grey" onClick = {() => setView('Board') }>Boards</Button> 
+        <Button color="grey" onClick = {() => setView('Post') }>Posts</Button>
+      </div>
     </div>
-    <div className="Buttons">
-      <Button color= "grey" onClick = {() => setView('Board') }>Boards</Button> 
-     <Button color="grey" onClick = {() => setView('Post') }>Posts</Button>
+    <div className="View">
+        { view === 'Board' ? <CreatedBoards /> : <CreatedPosts /> }
     </div>
-<div className="View">
-    { view === 'Board' ? <CreatedBoards /> : <CreatedPosts /> }
-</div>
-  </div>
+      </>
   )
 }
 

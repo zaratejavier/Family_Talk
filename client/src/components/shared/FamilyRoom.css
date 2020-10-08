@@ -1,11 +1,23 @@
 .home__header {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
   color:rgb(91, 90, 90);
   font-family: "FugazOne";
   font-size: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  /* padding-left: 300px; */
+  /* flex-wrap: wrap; */
+
 }
 
-.Buttons {
+.home{
+  display: flex;
+  flex-direction: column;
+}
+
+.home__buttons {
   text-align: center;
   margin-bottom: 5em;
   
@@ -13,8 +25,10 @@
 
 .home__modal {
   display: flex;
-  flex-direction: row-reverse;
-  padding-right: 30em;
+  /* justify-content: center; */
+  /* flex: -1; */
+  /* padding-left: 300px; */
+
 }
 
 .View {
@@ -22,4 +36,13 @@
   align-items: center;
   flex-flow: row wrap;
   justify-content: space-evenly;
+}
+
+.home__DropDown{
+  color:rgb(91, 90, 90);
+  font-size: x-large;
+}
+.home__headerContainer{
+  display: flex;
+  justify-content: center;
 }
