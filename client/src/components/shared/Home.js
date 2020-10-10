@@ -27,8 +27,8 @@ const Home = (props) => {
         </div>
       </div>
       <div className="home__buttons">
-        <Button color= "grey" onClick = {() => setView('Board') }>Boards</Button> 
-        <Button color="grey" onClick = {() => setView('Post') }>Posts</Button>
+        <button className= "home__button" onClick = {() => setView('Board') }>Boards</button> 
+        <button className= "home__button" onClick = {() => setView('Post') }>Posts</button>
       </div>
     </div>
     <div className="View">
