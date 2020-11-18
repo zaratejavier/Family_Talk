@@ -55,7 +55,7 @@ const AddPost = (props) => {
 
   return (
     <div>
-       <Modal trigger={<Button color="grey" onClick={toggle}>Add Post</Button>}>
+       <Modal trigger={<p onClick={toggle}>Add Post</p>}>
          <Modal.Content>
         <Form onSubmit={handleSubmit}>
           <Form.Input
