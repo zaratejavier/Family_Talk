@@ -60,7 +60,6 @@ const Board = (props) => {
         </Link>
         <div className="boardTitle">
         <h2>{props.name}</h2>
-        <p>{props.description}</p>
         <p className="cards">{posts.length} Cards</p>
         </div>
         <div className="buttons">

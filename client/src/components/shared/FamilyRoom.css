@@ -22,22 +22,38 @@
   margin-bottom: 5em;
 }
 
-.home__button{
+.home__button1{
   border-radius: 50px;
+  border: none;
   margin-right: 20px;
   font-size: large;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  background-color: rgb(242, 186, 194);
-  color: rgb(91, 88, 88);
+  font-weight: bold;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: rgb(255, 208, 213);
+  color: rgb(135, 132, 132);
   cursor: pointer;
   outline:0;
+}
 
-
-
-
+.home__button2{
+  border-radius: 50px;
+  border: none;
+  margin-right: 20px;
+  font-size: large;
+  font-weight: bold;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: white;
+  border: solid;
+  border-width: thin;
+  color: rgb(235, 120, 139);
+  cursor: pointer;
+  outline:0;
 }
 
 .home__modal {
@@ -45,7 +61,6 @@
   /* justify-content: center; */
   /* flex: -1; */
   /* padding-left: 300px; */
-
 }
 
 .View {

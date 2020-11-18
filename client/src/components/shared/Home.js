@@ -27,8 +27,8 @@ const Home = (props) => {
         </div>
       </div>
       <div className="home__buttons">
-        <button className= "home__button" onClick = {() => setView('Board') }>Boards</button> 
-        <button className= "home__button" onClick = {() => setView('Post') }>Posts</button>
+        <button className= "home__button1" onClick = {() => setView('Board') }>Boards</button> 
+        <button className= "home__button2" onClick = {() => setView('Post') }>Posts</button>
       </div>
     </div>
     <div className="View">
